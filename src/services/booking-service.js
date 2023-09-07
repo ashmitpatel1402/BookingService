@@ -2,7 +2,7 @@ const {BookingRepository}=require('../repository/index');
 const axios=require('axios');
 const {FLIGHT_SERVICE_PATH}=require('../config/serverconfig');
 const { ServiceError } = require('../utils/errors');
-
+//const{createChannel,publishMessage}=require('../utils/message-queues');
 class BookingService{
       constructor(){
         this.bookingRepository=new BookingRepository();
